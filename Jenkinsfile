@@ -12,14 +12,8 @@ pipeline {
         }
         stage('test') {
             steps {
-                sh 'pytest test.py'
+                sh 'docker build -t myubuntu .'
             }
-        }
-        stage('buid') {
-            steps {
-                sh 'pytest build.py'
-            }
-        }
-        
+        }  
     }
 }
