@@ -15,5 +15,11 @@ pipeline {
                 sh 'pytest test.py'
             }
         }
+        stage('buid') {
+            steps {
+                sh 'pytest build.py'
+            }
+        }
+        
     }
 }
