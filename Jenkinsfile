@@ -10,6 +10,8 @@ pipeline {
         }
         stage('test') {
             steps {
+                sh 'sudo apt update'
+                sh 'sudo apt install python3'
                 sh 'python3 test.py'
                 sh 'ls'
             }
