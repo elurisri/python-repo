@@ -10,6 +10,7 @@ pipeline {
         }
         stage('test') {
             steps {
+                sh 'apt−get install −y python3−pip'
                 sh 'pip install pytest'
                 sh 'pytest'
             }
