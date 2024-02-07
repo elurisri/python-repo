@@ -12,7 +12,7 @@ pipeline {
         }
         stage('test') {
             steps {
-                sh 'pytest test_capitalize.py'
+                sh 'pytest test.py'
             }
         }
     }
