@@ -10,10 +10,8 @@ pipeline {
         }
         stage('test') {
             steps {
-                sh 'apt update'
-                sh 'apt install python3'
-                sh 'python3 test.py'
-                sh 'ls'
+                sh 'pip install pytest'
+                sh 'pytest'
             }
         }
     }
