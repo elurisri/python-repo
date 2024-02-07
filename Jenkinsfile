@@ -1,7 +1,8 @@
 pipeline {
     agent {
         label 'slave'
-    }    
+    } 
+    
     stages {
         stage('scm download') {
             steps {
