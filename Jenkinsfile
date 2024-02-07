@@ -12,7 +12,7 @@ pipeline {
         }
         stage('test') {
             steps {
-                sh 'docker build -t myubuntu .'
+                sh 'pytest test.py'
             }
         }  
     }
