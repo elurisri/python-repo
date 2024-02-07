@@ -12,7 +12,6 @@ pipeline {
         }
         stage('test') {
             steps {
-                sh 'pip install pytest'
                 sh 'pytest test_capitalize.py'
             }
         }
