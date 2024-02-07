@@ -11,6 +11,7 @@ pipeline {
         }
         stage('test') {
             steps {
+                sh 'apt install -y python3-pip'
                 sh 'pip install pytest'
                 sh 'pytest'
             }
